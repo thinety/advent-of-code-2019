@@ -1,3 +1,5 @@
+module Intcode = Intcode
+
 let rec lines () =
   try
     let line = read_line () in
