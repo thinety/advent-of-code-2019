@@ -2,7 +2,7 @@ let solve input noun verb =
   let memory = Array.of_list input in
   memory.(1) <- noun;
   memory.(2) <- verb;
-  Aoc2019.Intcode.execute memory;
+  let _ = Aoc2019.Intcode.execute memory [] in
   memory.(0)
 
 let solve1 input = solve input 12 2
